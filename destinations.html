@@ -115,6 +115,28 @@
       width: 100%;
     }
 
+    @media only screen and (max-width: 600px) {
+
+      .icon {
+        display: none;
+      }
+
+      .nav-links {
+        text-align: center;
+
+      flex: auto;
+      flex-wrap: wrap;
+    }
+
+    .foot-nav a{
+      display: flex;
+      flex: auto;
+      flex-wrap: wrap;
+
+    }
+
+    }
+
     /* Layout - Activities & Attractions | Featured tours */
 
     .covGuide {
@@ -130,7 +152,7 @@
     }
 
     .explore {
-      background-image: url(./resources/images/3915228.jpg);
+      background-image: url(/resources/images/3915228.jpg);
       object-fit: cover;
       object-position: top;
       color: black;
@@ -260,7 +282,7 @@
     /* footer CSS code */
 
     .py-3 {
-      background-color: lightgrey;
+      background-color: lightcyan;
       padding: 2em;
     }
 
@@ -302,6 +324,48 @@
     #dest:hover {
       color: grey;
     }
+
+    /* MEDIA QUERY */
+
+    @media only screen and (max-width: 600px) {
+
+      .covGuide {
+        flex-direction: column;
+      }
+
+      .viewMore {
+        flex-direction: column;
+        flex-shrink: 0;
+
+      }
+
+      .viewMoreBtn {
+        margin-top: 1em;
+        width: max-content;
+      }
+
+      .activitiesCard,
+      .travelEssentialsCard,
+      .feauturedToursCard {
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+      .card,
+      .essentialsCard {
+        align-self: center;
+        width: 100%;
+        margin-top: 1em;
+        height: fit-content;
+      }
+
+      .essentialsCard .learnMore a {
+        padding-bottom: 0;
+      }
+
+
+    }
   </style>
 
 </head>
@@ -314,7 +378,7 @@
   <header>
 
     <nav>
-      <a href="index.html"><img src="./resources/images/logo_2.jpg" alt="Image not found"></a>
+      <a class="icon" href="index.html"><img src="./resources/images/logo_2.jpg" alt="Image not found"></a>
       <div class="nav-links">
         <ul>
           <li><a href="./index.html">HOME</a></li>
@@ -678,7 +742,7 @@
   <!-- footer -->
 
   <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3 foot-nav">
       <li class="nav-item"><a href="./index.html" class="nav-link" id="home">Home</a></li>
       <li class="nav-item"><a href="./About_US.html" class="nav-link" id="about">About Us</a></li>
       <li class="nav-item"><a href="./destinations.html" class="nav-link" id="dest">Destination</a></li>
