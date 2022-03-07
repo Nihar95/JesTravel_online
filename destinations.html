@@ -370,7 +370,8 @@
 
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div id="preloader"></div>
 
   <!-- header - logo + navbar -->
 
@@ -751,6 +752,14 @@
     </ul>
     <p class="text-center text-muted">JesTravel © 2021 Company, Inc</p>
   </footer>
+  <script>
+     var loader= document.getElementById("preloader");
+
+         window.addEventListener('load',function(){
+           loader.style.display= 'none';
+})
+</script>
+
 
 </body>
 
