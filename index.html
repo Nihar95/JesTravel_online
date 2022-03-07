@@ -16,7 +16,8 @@
         crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div id="preloader"></div>
     <section class="header">
         <nav>
              <a href="index.html"><img src="./resources/images/logo_2.jpg" alt="Image not found"></a>
@@ -184,6 +185,12 @@
 
 
     <script>
+     var loader= document.getElementById("preloader");
+
+         window.addEventListener('load',function(){
+           loader.style.display= 'none';
+           })
+
 
         var navLinks = document.getElementById("navLinks");
 
