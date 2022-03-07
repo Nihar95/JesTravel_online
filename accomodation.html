@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="./resources/style.css">
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div id="preloader"></div>
 
     <section class="header-acc">
         <nav>
@@ -301,6 +302,13 @@
 
         <p class="text-center text-muted">JesTravel © 2021 Company, Inc</p>
     </footer>
+    <script>
+     var loader= document.getElementById("preloader");
+
+         window.addEventListener('load',function(){
+           loader.style.display= 'none';
+           })
+</script>
 
 
 </body>
